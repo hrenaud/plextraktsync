@@ -9,3 +9,7 @@ conf Portainer / dockercompose
 4. Suivez les questions du configurateur. Pour créer ou récupérer une configuration Trakt aller à https://trakt.tv/oauth/applications
 5. Finalisez
 6. Dans le container `plextraktsyncwatch` forcer la command à `watch`.
+
+## Infos
+
+- https://github.com/Taxel/PlexTraktSync/discussions/963
