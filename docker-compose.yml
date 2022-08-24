@@ -14,12 +14,16 @@ services:
     image: ghcr.io/taxel/plextraktsync:latest
     container_name: plextraktsync
     privileged: true
+    stdin_open: true
+    tty: true
     volumes:
       - /home/plextraktsync/plextraktsync/config:/app/config
   plextraktsyncwatch:
     image: ghcr.io/taxel/plextraktsync:latest
     container_name: plextraktsyncwatch
     privileged: true
+    stdin_open: true
+    tty: true
     # command: watch
     volumes:
       - /home/plextraktsync/plextraktsyncwatch/config:/app/config
