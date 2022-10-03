@@ -27,7 +27,7 @@ services:
     privileged: true
     stdin_open: true
     tty: true
-    # command: watch
+    command: watch
     volumes:
       - /home/plextraktsync/config:/app/config
    watchtower:
