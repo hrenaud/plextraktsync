@@ -19,7 +19,7 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - /home/plextraktsync/plextraktsync/config:/app/config
+      - /home/plextraktsync/config:/app/config
   plextraktsyncwatch:
     image: ghcr.io/taxel/plextraktsync:latest
     container_name: plextraktsyncwatch
@@ -29,4 +29,4 @@ services:
     tty: true
     # command: watch
     volumes:
-      - /home/plextraktsync/plextraktsyncwatch/config:/app/config
+      - /home/plextraktsync/config:/app/config
